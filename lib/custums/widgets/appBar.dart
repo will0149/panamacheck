@@ -11,11 +11,10 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Glind'),
+      title: const Text('Verificador'),
       actions: <Widget>[
-        // action button
         IconButton(
-          icon: Icon(Icons.star, color: Colors.white,),
+          icon: Icon(Icons.star, color: Colors.white,), onPressed: () {},
         ),
       ],
       flexibleSpace: Container(
@@ -27,6 +26,4 @@ class _CustomAppBarState extends State<CustomAppBar> {
       ),
     );
   }
-
-
 }

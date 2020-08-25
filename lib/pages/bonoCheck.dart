@@ -3,20 +3,20 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class ScCheck extends StatefulWidget {
-  ScCheck({Key key}) : super(key: key);
+class BonoCheck extends StatefulWidget {
+  BonoCheck({Key key}) : super(key: key);
 
   @override
-  _ScCheckState createState() => _ScCheckState();
+  _BonoCheckState createState() => _BonoCheckState();
 }
 
-class _ScCheckState extends State<ScCheck> {
+class _BonoCheckState extends State<BonoCheck> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Salvo Conductos'),
+        title: const Text('Bono Solidario'),
         actions: <Widget>[
           // action button
           IconButton(
@@ -34,7 +34,7 @@ class _ScCheckState extends State<ScCheck> {
                   colors: <Color>[Colors.blue, Colors.red])),
         ),
       ),
-        body: _buildWebView(),
+      body: _buildWebView(),
     );
   }
 
@@ -42,7 +42,7 @@ class _ScCheckState extends State<ScCheck> {
     return WebView(
       javascriptMode: JavascriptMode.unrestricted,
       initialUrl:
-          'https://www.validacion.salvoconductos.mici.gob.pa/identificacion',
+      'https://vale.panamasolidario.gob.pa/vale/',
     );
   }
 }
