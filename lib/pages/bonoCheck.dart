@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 class BonoCheck extends StatefulWidget {
   BonoCheck({Key key}) : super(key: key);
@@ -11,7 +11,7 @@ class BonoCheck extends StatefulWidget {
 }
 
 class _BonoCheckState extends State<BonoCheck> {
-
+  final url = 'https://vale.panamasolidario.gob.pa/vale/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,10 +39,11 @@ class _BonoCheckState extends State<BonoCheck> {
   }
 
   Widget _buildWebView() {
-    return WebView(
-      javascriptMode: JavascriptMode.unrestricted,
-      initialUrl:
-      'https://vale.panamasolidario.gob.pa/vale/',
+    return WebviewScaffold(
+      url: url,
+      withLocalStorage: false,
+      withJavascript: true,
+      withLocalUrl: true,
     );
   }
 }

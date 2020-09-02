@@ -41,7 +41,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   }
 
   void shareApp() {
-    Share.share('check out my website https://example.com',
+    Share.share('Verificate con esta aplicación https://play.google.com/store/apps/details?id=com.JLD_Dev.panamacheck',
         subject: 'Aplicación para validación de bono y salvo conductos de forma mas cómoda Panamá');
   }
 
@@ -64,7 +64,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           Icon(Icons.check_circle, size: 30, color: Colors.white),
           Icon(Icons.card_giftcard, size: 30, color: Colors.white),
         ],
-        color: Colors.cyan,
+        color: Colors.blueAccent,
         buttonBackgroundColor: Colors.blueAccent,
         backgroundColor: Colors.transparent,
         animationCurve: Curves.bounceInOut,

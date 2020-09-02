@@ -27,6 +27,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   webview_flutter: ^0.3.18+1
+  flutter_webview_plugin: ^0.3.11
   curved_navigation_bar:
   share:
 

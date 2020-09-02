@@ -11,7 +11,6 @@ class ScCheck extends StatefulWidget {
 }
 
 class _ScCheckState extends State<ScCheck> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,15 +33,16 @@ class _ScCheckState extends State<ScCheck> {
                   colors: <Color>[Colors.blue, Colors.red])),
         ),
       ),
-        body: _buildWebView(),
+      body: _buildWebView(),
     );
   }
 
   Widget _buildWebView() {
     return WebView(
-      javascriptMode: JavascriptMode.unrestricted,
-      initialUrl:
-          'https://www.validacion.salvoconductos.mici.gob.pa/identificacion',
-    );
+        javascriptMode: JavascriptMode.unrestricted,
+        initialUrl:
+            'https://www.validacion.salvoconductos.mici.gob.pa/identificacion',
+        gestureNavigationEnabled: true,
+        initialMediaPlaybackPolicy: AutoMediaPlaybackPolicy.always_allow);
   }
 }
